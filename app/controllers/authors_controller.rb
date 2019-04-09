@@ -24,6 +24,8 @@ class AuthorsController < ApplicationController
   # POST /authors
   # POST /authors.json
   def create
+    thumb_upload = params[:author]
+
     @author = Author.new(author_params)
 
     respond_to do |format|
@@ -40,6 +42,7 @@ class AuthorsController < ApplicationController
   # PATCH/PUT /authors/1
   # PATCH/PUT /authors/1.json
   def update
+
     respond_to do |format|
       if @author.update(author_params)
         format.html { redirect_to @author, notice: 'Author was successfully updated.' }
