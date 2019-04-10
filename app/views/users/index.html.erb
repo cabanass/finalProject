@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
-<%= link_to "Back", home_index_path %>
+<%= link_to image_tag("back.resized.png"), home_index_path  %>
+<br>
 <br>
 
 <h1>Users</h1>
@@ -14,7 +15,7 @@
     </tr>
   </thead>
 
-  <tbody>
+  <tbody class="blog">
     <% @users.each do |user| %>
       <tr>
         <td><%= user.nickname %></td>
@@ -22,8 +23,7 @@
         <td><%= user.password %></td>
         <td><%= user.email %></td>
         <td><%= link_to 'Show', user %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
       </tr>
     <% end %>
   </tbody>
@@ -32,3 +32,4 @@
 <br>
 
 <%= link_to 'New User', new_user_path %>
+

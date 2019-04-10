@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
-<%= link_to "Back", home_index_path %>
+<%= link_to image_tag("back.resized.png"), home_index_path  %>
+<br>
 <br>
 <h1>Authors</h1>
 <table class="table table-hover">
@@ -8,7 +9,6 @@
     <th class="w-25">First Name</th>
     <th class="w-25">Last Name</th>
     <th class="w-25">Email</th>
-    <th class="w-25">Actions</th>
   </tr>
   </thead>
   <tbody>
@@ -17,18 +17,8 @@
       <td class="w-25"><%= author.fname %></td>
       <td class="w-25"><%= author.lname %></td>
       <td class="w-25"><%= author.email %></td>
-      <td class="w-25">
-        <%= link_to author, class: "btn btn-default btn-sm" do %>
-          Show
-        <% end %>
-        <%= link_to edit_author_path(author), class: "btn btn-default btn-sm" do %>
-          Edit
-        <% end %>
-        <%= link_to author, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger btn-sm" do %>
-        Delete
-  <% end %>
-  </td>
-  </tr>
+
+    </tr>
   <% end %>
   </tbody>
 </table>
