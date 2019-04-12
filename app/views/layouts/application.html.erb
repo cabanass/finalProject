@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html>
+<style>
+
+  a:hover, a:active {
+    background-color: #DADADA;
+  }
+
+</style>
   <head>
     <title>GV News</title>
     <%= csrf_meta_tags %>
@@ -11,8 +18,9 @@
   </head>
 
   <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <span class="navbar-brand mb-0 h1splash"><%= link_to image_tag("logo1.png"), home_index_path  %> </span>
+  <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-light bg-light">
+
+    <span class="navbar-brand mb-0 h1splash"><%= link_to image_tag("logo3.resized.resized.png"), home_index_path  %> </span>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -21,10 +29,10 @@
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
           <%= link_to "Home", root_path, :class => "nav-link" %>
-        <li>
+        </li>
 
         <li class="nav-item">
-          <%= link_to "Posts", posts_path, :class => "nav-link" %>
+          <%= link_to "News", posts_path, :class => "nav-link" %>
         <li>
 
         <li class="nav-item">
@@ -35,8 +43,15 @@
           <%= link_to "Users", users_path, :class => "nav-link" %>
         <li>
       </ul>
+      <form class="navbar-form navbar-left" action="/action_page.php">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> <%= image_tag("login.png")%></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> </a> <%= image_tag("login.png")%></li>
       </ul>
     </div>
   </nav>
