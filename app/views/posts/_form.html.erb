@@ -10,41 +10,42 @@
       </ul>
     </div>
   <% end %>
-  <div class="field">
-    <%= form.label :author_id %>
+  <br>
+  <div class="form-group">
+    <%= form.label :author_id %><br><br>
     <%= form.select :author_id,
                     options_for_select(Author.all.collect {|a| ["#{a.lname},
         #{a.fname}", a.id]},
                                        selected: (@post.author ? @post.author.id : Author.first.id)),
-                    {} %>
+                    {} , class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :category %>
-    <%= form.select :category, @categories.keys, {selected: @post.category} %>
+
+  <br>
+  <div class="form-group">
+    <%= form.label :headline %><br><br>
+    <%= form.text_field :headline, class: "form-control"  %>
+  </div>
+  <br>
+  <div class="form-group">
+    <%= form.label :byline %><br><br>
+    <%= form.text_field :byline, class: "form-control"  %>
+  </div>
+  <br>
+  <div class="form-group">
+    <%= form.label :leadParagraph %><br><br>
+    <%= form.text_field :leadParagraph, class: "form-control"  %>
+  </div>
+  <br>
+  <div class="form-group">
+    <%= form.label :body %><br>
+    <%= form.text_field :body, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :headline %>
-    <%= form.text_field :headline %>
-  </div>
-
-  <div class="field">
-    <%= form.label :byline %>
-    <%= form.text_field :byline %>
-  </div>
-
-  <div class="field">
-    <%= form.label :leadParagraph %>
-    <%= form.text_field :leadParagraph %>
-  </div>
-
-  <div class="field">
-    <%= form.label :body %>
-    <%= form.text_field :body %>
-  </div>
+  <br>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class: "btn btn-primary" %>
+    <%= link_to 'Cancel', posts_path, class: "btn btn-danger" %>
   </div>
 <% end %>

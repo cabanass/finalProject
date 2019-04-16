@@ -2,7 +2,10 @@
 <%= link_to image_tag("back.resized.png"), home_index_path  %>
 <br>
 <br>
-<h1>Authors</h1>
+<h1 style=font-size:100px>Authors</h1>
+<%= link_to image_tag("add.resized.jpg"), new_author_path %>
+<br>
+<br>
 <table class="table table-hover">
   <thead>
   <tr>
@@ -13,14 +16,21 @@
   </thead>
   <tbody>
   <% @authors.each do |author| %>
+
     <tr>
-      <td class="w-25"><%= author.fname %></td>
-      <td class="w-25"><%= author.lname %></td>
-      <td class="w-25"><%= author.email %></td>
+      <td class="jumbotron"><%= author.fname %></td>
+      <td class="jumbotron"><%= author.lname %></td>
+      <td class="jumbotron"><%= author.email %></td>
 
     </tr>
-  <% end %>
+    <% end %>
   </tbody>
 </table>
-<br/>
-<%= link_to 'New Author', new_author_path, :class => "btn btn-primary" %>
+<br>
+<footer class="container-fluid text-center">
+  <%= link_to image_tag("up.resized.png"), authors_path  %>
+  <br><br>
+  <p>&copy; 2019 GV News</p>
+</footer>
+
+

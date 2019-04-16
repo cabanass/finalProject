@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :set_categories
+
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
 
@@ -73,10 +73,8 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:author, :author_id, :category, :headline, :byline, :leadParagraph, :body)
+      params.require(:post).permit(:author, :author_id, :headline, :byline, :leadParagraph, :body)
     end
 
-  def set_categories
-    @categories = Post.categories
-  end
+
 end

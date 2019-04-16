@@ -2,38 +2,49 @@
 <%= link_to image_tag("back.resized.png"), home_index_path  %>
 <br>
 <br>
-<h1>Posts</h1>
 
-<table class="table table-responsive">
-  <thead>
-    <tr>
-      <th class="w-25">Author</th>
-      <th class="w-25">Category</th>
-      <th class="w-25">Headline</th>
-      <th class="w-25">Byline</th>
-      <th class="w-25">Lead Paragraph</th>
-      <th class="w-25">Body</th>
+<h1 style=font-size:100px>News</h1>
+<%= link_to image_tag("add.resized.jpg"), new_post_path %>
 
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @posts.each do |post| %>
-      <tr>
-        <td class="w-25"><%= (post.author.try(:lname) || "NA") %></td>
-        <td class="w-25"><%= post.category %></td>
-        <td class="w-25"><%= post.headline %></td>
-        <td class="w-25"><%= post.byline %></td>
-        <td class="w-25"><%= post.leadParagraph %></td>
-        <td class="w-25"><%= post.body %></td>
-        <td class="w-25"><%= link_to 'Show', post %></td>
-        <td class="w-25"><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td class="w-25"><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
 <br>
+<br>
 
-<%= link_to 'New Post', new_post_path %>
+  <%@posts.each do |post|%>
+<div class="jumbotron">
+
+  <h2 style=font-size:50px >
+  <%= post.headline %> </h2>
+
+  <h3>
+  <%= post.byline %>
+  </h3>
+
+
+  <h5>
+  <%= post.leadParagraph %>
+  </h5>
+  <br>
+  <br>
+  <p>
+
+    <%= post.author.fname %> <%=(post.author.try(:lname) || "NA")%>
+  </p>
+  <br>
+  <br>
+  <p>
+    <%= post.body %>
+  </p>
+
+
+  </div>
+    <% end %>
+
+
+<br>
+<footer class="container-fluid text-center">
+  <%= link_to image_tag("up.resized.png"), posts_path  %>
+  <br><br>
+  <p>&copy; 2019 GV News</p>
+</footer>
+
