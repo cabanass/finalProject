@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab8be2dc-8f1c-4178-b995-fa67beef5f9b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/newspaper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/newspaper.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/authors_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/authors_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/home_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/home_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/sponsors_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/sponsors_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/sponsor.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/sponsor.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/posts/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/sponsors/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/sponsors/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -44,7 +32,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="112">
@@ -72,26 +60,30 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="744">
+              <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/database.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="496">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/authors/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
               <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile.lock">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1248">
-              <caret line="78" column="12" selection-start-line="78" selection-start-column="10" selection-end-line="78" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/initializers/application_controller_renderer.rb">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -144,16 +136,18 @@
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/sponsor.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/controllers/authors_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/posts/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/sponsors/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/config/database.yml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="960" />
     <option name="y" value="27" />
     <option name="width" value="960" />
     <option name="height" value="1148" />
@@ -226,6 +220,16 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="sponsors" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newspaper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newspaper" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newspaper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newspaper" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -370,15 +374,15 @@
       <workItem from="1555025168568" duration="10204000" />
       <workItem from="1555365735152" duration="14965000" />
       <workItem from="1555454890784" duration="11671000" />
-      <workItem from="1556031855126" duration="1576000" />
+      <workItem from="1556031855126" duration="2283000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53590000" />
+    <option name="totallyTimeSpent" value="54297000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="960" height="1148" extended-state="4" />
+    <frame x="960" y="27" width="960" height="1148" extended-state="4" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2825607" />
@@ -406,9 +410,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/users.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -614,13 +615,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile.lock">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1248">
@@ -675,6 +669,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="7" column="145" selection-start-line="7" selection-start-column="145" selection-end-line="7" selection-end-column="145" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="744">
+          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
