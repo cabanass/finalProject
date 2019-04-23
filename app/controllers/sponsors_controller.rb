@@ -5,9 +5,14 @@ class SponsorsController < ApplicationController
   # GET /sponsors.json
   def index
     @sponsors = Sponsor.all
-  end
+    respond_to do |format|
+      format.html {render :index}
+      format.json {render :index, status: :ok}
+      format.xml {render xml: @sponsors.to_xml}
+    end
+    end
 
-  # GET /sponsors/1
+    # GET /sponsors/1
   # GET /sponsors/1.json
   def show
   end

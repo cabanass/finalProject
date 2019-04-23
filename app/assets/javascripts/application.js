@@ -15,4 +15,7 @@
 //= require bootstrap
 //= require activestorage
 //= require turbolinks
+//= require popper
+//= require js-routes
 //= require_tree .
+

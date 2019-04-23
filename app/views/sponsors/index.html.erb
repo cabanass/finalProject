@@ -8,22 +8,13 @@
 
 <br>
 <br>
+
 <table class="table table-hover">
-  <thead>
-  <tr>
-    <th class="w-25">Company Name</th>
 
-    <th class="w-25">Logo</th>
-
-  </tr>
-  </thead>
   <tbody>
   <% @sponsors.each do |sponsor| %>
 
-    <tr>
-      <td class="jumbotron"><%= sponsor.company %></td>
-
-      <td class="jumbotron"><%= image_tag (sponsor.logo)%></td>
+        <td class="span4"><%= image_tag (sponsor.logo)%></td>
 
 
     </tr>
