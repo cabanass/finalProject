@@ -1,3 +1,4 @@
+ # encoding: utf-8
 class AuthorsController < ApplicationController
   before_action :set_author, only: [:show, :edit, :update, :destroy]
 
